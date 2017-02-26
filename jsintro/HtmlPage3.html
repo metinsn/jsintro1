@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <script type="text/javascript">
+        function Hesaplama() {
+            var sayi1 = document.getElementById('sayi1').value;
+
+            var sayi2 = document.getElementById('sayi2').value;
+            document.getElementById('sonuc').value = parseInt(sayi1) + parseInt(sayi2);
+        }
+        setInterval("Hesaplama();", 500);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="col-lg-6">
+            <label> 1.sayi :</label>
+            <input type="text" class="form-control" name="sayi1" id="sayi1" /><br />
+        </div><div class="col-lg-6">
+            <label> 2.sayi :</label>
+            <input type="text"  class="form-control" name="sayi2" id="sayi2" /><br />
+        </div>
+        <div class="col-lg-8 col-lg-offset-2">
+            <label>sonuç :</label>
+            <input style="text-align:center;" type="button" class="btn btn-success btn-block" name="sonuc" id="sonuc" /><br />
+        </div>       
+    </div>
+</body>
+</html>
